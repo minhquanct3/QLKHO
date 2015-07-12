@@ -26,5 +26,10 @@ namespace GUI.Hethong
         {
 
         }
+
+        private void btnnhaplai_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

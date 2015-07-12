@@ -15,7 +15,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Nghiepvu.frmLapdonhang());
+            Application.Run(new Hethong.frmLogin());
         }
     }
 }
