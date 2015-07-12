@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A18AF4E-3854-4267-AED1-48AAF714DD6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Baocao\frmDSHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baocao\frmDSHD.Designer.cs">
+      <DependentUpon>frmDSHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baocao\frmDSKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baocao\frmDSKH.Designer.cs">
+      <DependentUpon>frmDSKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baocao\frmNhapxuatton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baocao\frmNhapxuatton.Designer.cs">
+      <DependentUpon>frmNhapxuatton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hethong\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hethong\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hethong\frmURL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hethong\frmURL.Designer.cs">
+      <DependentUpon>frmURL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nghiepvu\frmghisonhatky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nghiepvu\frmghisonhatky.Designer.cs">
+      <DependentUpon>frmghisonhatky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nghiepvu\frmLapdonhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nghiepvu\frmLapdonhang.Designer.cs">
+      <DependentUpon>frmLapdonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nghiepvu\frmLapdonhangChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nghiepvu\frmLapdonhangChi.Designer.cs">
+      <DependentUpon>frmLapdonhangChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nghiepvu\frmNhaphang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nghiepvu\frmNhaphang.Designer.cs">
+      <DependentUpon>frmNhaphang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quanly\frmDanhmuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanly\frmDanhmuc.Designer.cs">
+      <DependentUpon>frmDanhmuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanly\frmGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanly\frmGia.Designer.cs">
+      <DependentUpon>frmGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanly\frmKhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanly\frmKhachhang.Designer.cs">
+      <DependentUpon>frmKhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanly\frmMathang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanly\frmMathang.Designer.cs">
+      <DependentUpon>frmMathang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanly\frmNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanly\frmNhanvien.Designer.cs">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hethong\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hethong\frmURL.resx">
+      <DependentUpon>frmURL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nghiepvu\frmLapdonhang.resx">
+      <DependentUpon>frmLapdonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nghiepvu\frmLapdonhangChi.resx">
+      <DependentUpon>frmLapdonhangChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nghiepvu\frmNhaphang.resx">
+      <DependentUpon>frmNhaphang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICO.ico" />
+    <Content Include="Images\accept.ico" />
+    <Content Include="Images\accept.png" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\all.png" />
+    <Content Include="Images\Bar Chart1.ico" />
+    <Content Include="Images\books.ico" />
+    <Content Include="Images\calendar_date.ico" />
+    <Content Include="Images\clean.png" />
+    <Content Include="Images\Clock4.ico" />
+    <Content Include="Images\cogthuc.png" />
+    <Content Include="Images\congthuc2.png" />
+    <Content Include="Images\connect_to_database.png" />
+    <Content Include="Images\conthuc.png" />
+    <Content Include="Images\db_update.png" />
+    <Content Include="Images\Delete3.png" />
+    <Content Include="Images\doichoi.png" />
+    <Content Include="Images\dongbo.png" />
+    <Content Include="Images\dongbo2.png" />
+    <Content Include="Images\excel2.png" />
+    <Content Include="Images\exit.png" />
+    <Content Include="Images\export.png" />
+    <Content Include="Images\folder-search.png" />
+    <Content Include="Images\help.ico" />
+    <Content Include="Images\ico\accept.ico" />
+    <Content Include="Images\ico\add.ico" />
+    <Content Include="Images\ico\Add1.ico" />
+    <Content Include="Images\ico\addnew.ico" />
+    <Content Include="Images\ico\back.ico" />
+    <Content Include="Images\ico\Back1.ico" />
+    <Content Include="Images\ico\Bar Chart1.ico" />
+    <Content Include="Images\ico\books.ico" />
+    <Content Include="Images\ico\calendar_background.ico" />
+    <Content Include="Images\ico\calendar_date.ico" />
+    <Content Include="Images\ico\clear.ico" />
+    <Content Include="Images\ico\Clock4.ico" />
+    <Content Include="Images\ico\comment.ico" />
+    <Content Include="Images\ico\delete.ico" />
+    <Content Include="Images\ico\Delete1.ico" />
+    <Content Include="Images\ico\Email1.ico" />
+    <Content Include="Images\ico\Exit.ico" />
+    <Content Include="Images\ico\Exit1.ico" />
+    <Content Include="Images\ico\folder.ico" />
+    <Content Include="Images\ico\folder_add.ico" />
+    <Content Include="Images\ico\help.ico" />
+    <Content Include="Images\ico\home.ico" />
+    <Content Include="Images\ico\import.png" />
+    <Content Include="Images\ico\info.ico" />
+    <Content Include="Images\ico\Info1.ico" />
+    <Content Include="Images\ico\Line Chart1.ico" />
+    <Content Include="Images\ico\Load1.ico" />
+    <Content Include="Images\ico\Loading1.ico" />
+    <Content Include="Images\ico\login.ico" />
+    <Content Include="Images\ico\mail.ico" />
+    <Content Include="Images\ico\mail_sent.ico" />
+    <Content Include="Images\ico\Modify1.ico" />
+    <Content Include="Images\ico\monitor.ico" />
+    <Content Include="Images\ico\new_page.ico" />
+    <Content Include="Images\ico\next.ico" />
+    <Content Include="Images\ico\Next1.ico" />
+    <Content Include="Images\ico\page_edit.ico" />
+    <Content Include="Images\ico\page_preview.ico" />
+    <Content Include="Images\ico\Picture1.ico" />
+    <Content Include="Images\ico\Pie Chart1.ico" />
+    <Content Include="Images\ico\Print1.ico" />
+    <Content Include="Images\ico\process.ico" />
+    <Content Include="Images\ico\Profile1.ico" />
+    <Content Include="Images\ico\refresh.ico" />
+    <Content Include="Images\ico\rss.ico" />
+    <Content Include="Images\ico\Save1.ico" />
+    <Content Include="Images\ico\savepng.png" />
+    <Content Include="Images\ico\search.ico" />
+    <Content Include="Images\ico\Search1.ico" />
+    <Content Include="Images\ico\SLTP.ico" />
+    <Content Include="Images\ico\sound.ico" />
+    <Content Include="Images\ico\sum v2.ico" />
+    <Content Include="Images\ico\total.ico" />
+    <Content Include="Images\ico\Undo.ico" />
+    <Content Include="Images\ico\update.ico" />
+    <Content Include="Images\ico\user.ico" />
+    <Content Include="Images\ico\video.ico" />
+    <Content Include="Images\ico\Warning1.ico" />
+    <Content Include="Images\ico\window.ico" />
+    <Content Include="Images\Info1.ico" />
+    <Content Include="Images\Key.ico" />
+    <Content Include="Images\Line Chart1.ico" />
+    <Content Include="Images\load.png" />
+    <Content Include="Images\Load1.ico" />
+    <Content Include="Images\Login.png" />
+    <Content Include="Images\logo.ico" />
+    <Content Include="Images\main.png" />
+    <Content Include="Images\Modify.png" />
+    <Content Include="Images\page_edit.ico" />
+    <Content Include="Images\png\accept.png" />
+    <Content Include="Images\png\add.png" />
+    <Content Include="Images\png\addnew.png" />
+    <Content Include="Images\png\addproduct.png" />
+    <Content Include="Images\png\advancedsettings.png" />
+    <Content Include="Images\png\back.jpg" />
+    <Content Include="Images\png\Backdroup-hoi-thi.png" />
+    <Content Include="Images\png\calculator_edit.png" />
+    <Content Include="Images\png\capnhap.png" />
+    <Content Include="Images\png\changekey.png" />
+    <Content Include="Images\png\clean.png" />
+    <Content Include="Images\png\Clock4.png" />
+    <Content Include="Images\png\close.png" />
+    <Content Include="Images\png\close2.png" />
+    <Content Include="Images\png\close3.png" />
+    <Content Include="Images\png\color.png" />
+    <Content Include="Images\png\connect_to_database.png" />
+    <Content Include="Images\png\Delete.png" />
+    <Content Include="Images\png\delete2.png" />
+    <Content Include="Images\png\Delete3.png" />
+    <Content Include="Images\png\doichoi.png" />
+    <Content Include="Images\png\exit.png" />
+    <Content Include="Images\png\exit2.png" />
+    <Content Include="Images\png\exit22.png" />
+    <Content Include="Images\png\export.png" />
+    <Content Include="Images\png\export2.png" />
+    <Content Include="Images\png\Flag.png" />
+    <Content Include="Images\png\games.png" />
+    <Content Include="Images\png\input.png" />
+    <Content Include="Images\png\key128.png" />
+    <Content Include="Images\png\load.png" />
+    <Content Include="Images\png\Login.png" />
+    <Content Include="Images\png\login128.png" />
+    <Content Include="Images\png\Login8.png" />
+    <Content Include="Images\png\Login9.png" />
+    <Content Include="Images\png\Login_.png" />
+    <Content Include="Images\png\logo.gif" />
+    <Content Include="Images\png\logo.png" />
+    <Content Include="Images\png\logo2.gif" />
+    <Content Include="Images\png\logout.png" />
+    <Content Include="Images\png\logout48.png" />
+    <Content Include="Images\png\Modify.png" />
+    <Content Include="Images\png\newuser.png" />
+    <Content Include="Images\png\next.png" />
+    <Content Include="Images\png\next2.png" />
+    <Content Include="Images\png\nhapdiem.png" />
+    <Content Include="Images\png\nhapdiem2.png" />
+    <Content Include="Images\png\oclock.png" />
+    <Content Include="Images\png\oclock2.png" />
+    <Content Include="Images\png\play.png" />
+    <Content Include="Images\png\Play1Pressed.png" />
+    <Content Include="Images\png\pre.png" />
+    <Content Include="Images\png\print-duplex.png" />
+    <Content Include="Images\png\print.png" />
+    <Content Include="Images\png\product.png" />
+    <Content Include="Images\png\product2.png" />
+    <Content Include="Images\png\reload.png" />
+    <Content Include="Images\png\restart48.png" />
+    <Content Include="Images\png\ringtone.png" />
+    <Content Include="Images\png\save.png" />
+    <Content Include="Images\png\save2.png" />
+    <Content Include="Images\png\search.png" />
+    <Content Include="Images\png\search2.png" />
+    <Content Include="Images\png\sen_Forward.png" />
+    <Content Include="Images\png\sen_Forward2.png" />
+    <Content Include="Images\png\setcolor.png" />
+    <Content Include="Images\png\setup.png" />
+    <Content Include="Images\png\show.png" />
+    <Content Include="Images\png\signature.png" />
+    <Content Include="Images\png\stop.png" />
+    <Content Include="Images\png\Sum.png" />
+    <Content Include="Images\png\think.png" />
+    <Content Include="Images\png\time.png" />
+    <Content Include="Images\png\tongdiem.png" />
+    <Content Include="Images\png\tracnghiem.png" />
+    <Content Include="Images\png\tracnghiem2.png" />
+    <Content Include="Images\png\unlock red.png" />
+    <Content Include="Images\png\unlock.png" />
+    <Content Include="Images\png\update.png" />
+    <Content Include="Images\png\update_misc.png" />
+    <Content Include="Images\png\userpassword.png" />
+    <Content Include="Images\png\user_login.png" />
+    <Content Include="Images\png\writer.png" />
+    <Content Include="Images\png\xephang.png" />
+    <Content Include="Images\product.png" />
+    <Content Include="Images\refresh.ico" />
+    <Content Include="Images\reload.png" />
+    <Content Include="Images\restart48.png" />
+    <Content Include="Images\savepng.png" />
+    <Content Include="Images\search.ico" />
+    <Content Include="Images\Search1.ico" />
+    <Content Include="Images\show.png" />
+    <Content Include="Images\SLTP.ico" />
+    <Content Include="Images\tongdiem.png" />
+    <Content Include="Images\tracnghiem.png" />
+    <Content Include="Images\unlock.png" />
+    <Content Include="Images\update-128%281%29.png" />
+    <Content Include="Images\update-128.png" />
+    <Content Include="Images\update.ico" />
+    <Content Include="Images\update.png" />
+    <Content Include="Images\update_misc.png" />
+    <Content Include="Images\writer.png" />
+    <Content Include="Images\xephang.png" />
+    <Content Include="Images\_Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUL\BUL.csproj">
+      <Project>{17619bdc-cb03-4ed8-a5c1-1b1d6e601627}</Project>
+      <Name>BUL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
