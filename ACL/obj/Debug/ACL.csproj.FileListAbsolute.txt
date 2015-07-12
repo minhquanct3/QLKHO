@@ -1,0 +1,5 @@
+D:\QUAN LY KHO_GO VAP\SOFT\QLK\ACL\bin\Debug\ACL.dll
+D:\QUAN LY KHO_GO VAP\SOFT\QLK\ACL\bin\Debug\ACL.pdb
+D:\QUAN LY KHO_GO VAP\SOFT\QLK\ACL\obj\Debug\ACL.dll
+D:\QUAN LY KHO_GO VAP\SOFT\QLK\ACL\obj\Debug\ACL.pdb
+D:\QUAN LY KHO_GO VAP\SOFT\QLK\ACL\obj\Debug\ACL.csprojResolveAssemblyReference.cache
